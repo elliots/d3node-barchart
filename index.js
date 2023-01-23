@@ -74,6 +74,7 @@ function bar({
   svg.append('text')
       .attr('transform', `translate(${width / 2}, ${height + _margin.bottom - 5})`)
       .style('text-anchor', 'middle')
+      .style('font-family', 'sans-serif')
       .text(_labels.xAxis);
 
   // add the y Axis
@@ -86,6 +87,7 @@ function bar({
     .attr('x',0 - (height / 2))
     .attr('dy', '1em')
     .style('text-anchor', 'middle')
+    .style('font-family', 'sans-serif')
     .text(_labels.yAxis);
 
   return d3n;
